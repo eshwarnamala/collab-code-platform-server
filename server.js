@@ -41,11 +41,11 @@ app.use(
     }),
     cookie: {
       maxAge: 24 * 60 * 60 * 1000, 
-      sameSite: "lax", 
-      // sameSite: "none", // Use 'none' for cross-origin cookies
-      secure: false, 
+      // sameSite: "lax", 
+      sameSite: "none", 
+      // secure: false, 
+      secure: true, 
       httpOnly: true,
-      // secure: true, 
       maxAge: 24 * 60 * 60 * 1000, 
     },
   })
